@@ -11,7 +11,9 @@ int CounterDigits(int n)
         counter++;
         n/=10; //n=n/10
     }
+    //System.Console.WriteLine(Counter); //мусорный вывод - подпрограммы ничего не выводят
     return counter;
 }
 
+//вывод только в основной подпрограмме
 System.Console.WriteLine(CounterDigits(789));
