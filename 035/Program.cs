@@ -1,18 +1,15 @@
 ﻿// 35/ Подсчитать сумму цифр в числе. Сделать подпрограмму.
 
 
-
-int N=153501;
+int N=102354;
 int sumN=0;
-int a = 10;
+
 
 while (N>0)
 {
-    N=N/a;
-    int counter=N%a;
+    int counter=N%10;
     sumN=sumN+counter;
-    
+    N=N/10;
 }
 
 System.Console.WriteLine(sumN);
-
